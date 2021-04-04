@@ -8,6 +8,7 @@
 
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import PropsChild from './propsChild';
 
 class App extends Component {
 
@@ -49,9 +50,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.background}>
-        <Text onPress={this.onAdd}>
-          {this.state.sampleNum}
-        </Text>
+        <PropsChild sampleText={this.state.sampleText} changeState={this.changeState} />
       </View>
     )
   }
