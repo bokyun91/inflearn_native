@@ -7,7 +7,7 @@
  */
 
  import React, { Component } from 'react';
- import { View, Text, StyleSheet, TextInput } from 'react-native';
+ import { View, StyleSheet, TextInput } from 'react-native';
  
  class Input extends Component {
 
